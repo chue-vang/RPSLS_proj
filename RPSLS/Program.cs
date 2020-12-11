@@ -15,10 +15,9 @@ namespace RPSLS
             //game.Welcome();
             //Console.ReadLine();
 
-            Human human = new Human();
-            human.PlayerSelectGesture(Player selectGesture);
-
-
+            //Human test = new Human(0, 1);
+            //test.PlayerOneChosenGesture();
+            //Console.ReadLine();
 
 
         }

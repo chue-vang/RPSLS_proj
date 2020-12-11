@@ -9,8 +9,8 @@ namespace RPSLS
     class Game
     {
         //member variables (HAS A)
-
-
+        public Player playerOne = new Computer();
+        public Player playerTwo;
         // two players (HAS A)
         // one player can be human and a second player can be either human or computer
 
@@ -33,6 +33,38 @@ namespace RPSLS
         public void Welcome()
         {
             Console.WriteLine("Welcome to ROCK, PAPER, SCISSOR, LIZARD, SPOCK");
+        }
+
+        public void VerifySecondPlayer()
+        {
+            bool inputCheck = true;
+            while (inputCheck)
+            {
+                Console.WriteLine("How Many Players Will be Playing?  Select 1 for ONE Player and 2 for TWO Players");
+                string verifyPlayerQuantity = Console.ReadLine();
+                switch (verifyPlayerQuantity)
+                {
+                    case "1":
+                    case "one":
+                        playerOne = new Human();
+                        playerTwo = new Computer();
+                        inputCheck = false;
+                        break;
+                    case "2":
+                        playerOne = new Human();
+                        playerTwo = new Human();
+                        inputCheck = false;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid selection");
+                        break;
+                }
+
+            }
+
+            //
+            //need to complete method
+            //
         }
 
     }

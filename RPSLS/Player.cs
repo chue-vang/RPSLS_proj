@@ -11,14 +11,15 @@ namespace RPSLS
         //member variables (HAS A)
         public List<string> gestures;
         public int score;
-        public int chosenGesture;
+        public string chosenGesture;
+
 
         //constructor
-        public  Player()
+        public Player()
         {
             gestures = new List<string>() { "rock", "paper", "scissor", "lizard", "spock" };
             
-
+           
         }
 
         //member methods (CAN DO)
@@ -38,7 +39,7 @@ namespace RPSLS
         //lizard poinson/eats <i> if <i>=Spock OR paper, but loses to everything else
         //Spock smashes/vaporizes <i> if <i>=scissors OR rok, but loses to everything else
 
-        
+
 
 
 

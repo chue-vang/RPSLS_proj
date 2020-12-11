@@ -17,10 +17,7 @@ namespace RPSLS
         {
             this.computerPlayerTwo = ComputerPlayerTwo;
         }
-
-
         
-
         //member methods (CAN DO)
 
         //what can a computer player do??
@@ -31,7 +28,7 @@ namespace RPSLS
             Console.WriteLine("Computer player, please select your gesture from the list: Rock=0, Paper=2, Scissor=3, Lizard=4, Spock=5");
             foreach(string gestures in gestures)
                 Console.WriteLine(gestures);
-            
+            //
             //method not complete
             //need to generate a random number from 0-4
         }
