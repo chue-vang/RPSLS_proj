@@ -10,6 +10,17 @@ namespace RPSLS
     {
         static void Main(string[] args)
         {
+            //test console writeline
+            //Game game = new Game();
+            //game.Welcome();
+            //Console.ReadLine();
+
+            Human human = new Human();
+            human.PlayerSelectGesture(Player selectGesture);
+
+
+
+
         }
     }
 }

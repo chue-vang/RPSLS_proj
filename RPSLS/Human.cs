@@ -25,7 +25,24 @@ namespace RPSLS
         //a human player can choose which gestures to use
         //the human user will need to select their gesture from a list, will need to validate their input
 
+        public void PlayerOneSelectGesture(Player selectGesture)
+        {            
+            Console.WriteLine("Player 1, please select your gesture from the list: Rock=0, Paper=2, Scissor=3, Lizard=4, Spock=5");
+            foreach(string gestures in gestures)
+            {
+                Console.WriteLine(gestures);
+            }
+            int userInput = Int32.Parse(Console.ReadLine());            
+        }
 
-        public void
+        public void PlayerTwoSelectGesture(Player selectGesture2)
+        {
+            Console.WriteLine("Player 2, please select your gesture from the list: Rock=0, Paper=2, Scissor=3, Lizard=4, Spock=5");
+            foreach(string gestures in gestures)
+            {
+                Console.WriteLine(gestures);
+            }
+            int userInput2 = Int32.Parse(Console.ReadLine());
+        }
     }
 }

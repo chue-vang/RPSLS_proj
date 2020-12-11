@@ -9,8 +9,7 @@ namespace RPSLS
     class Game
     {
         //member variables (HAS A)
-        public int playerOne;
-        public int playerTwo;
+
 
         // two players (HAS A)
         // one player can be human and a second player can be either human or computer
@@ -35,5 +34,6 @@ namespace RPSLS
         {
             Console.WriteLine("Welcome to ROCK, PAPER, SCISSOR, LIZARD, SPOCK");
         }
+
     }
 }

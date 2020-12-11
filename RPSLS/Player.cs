@@ -14,9 +14,11 @@ namespace RPSLS
         public int chosenGesture;
 
         //constructor
-        public Player()
+        public  Player()
         {
             gestures = new List<string>() { "rock", "paper", "scissor", "lizard", "spock" };
+            
+
         }
 
         //member methods (CAN DO)
@@ -29,5 +31,16 @@ namespace RPSLS
         // see a list of gestures
         // choose a gesture
         // gestures can be compared - where will they be compared?
+
+        //rock crushes <i> if <i>=scissors OR lizard, but loses to everything else
+        //scissors cuts <i> if <i>=paper OR lizard, but loses to everything else
+        //paper covers/disproves <i> if <i>=paper OR Spock, but loses to everything else
+        //lizard poinson/eats <i> if <i>=Spock OR paper, but loses to everything else
+        //Spock smashes/vaporizes <i> if <i>=scissors OR rok, but loses to everything else
+
+        
+
+
+
     }
 }
