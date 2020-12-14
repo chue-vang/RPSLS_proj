@@ -22,27 +22,9 @@ namespace RPSLS
 
         //member methods (CAN DO)
 
-        //what can a player do??
-        //players can use all the gestures
-        //a player can win or lose
-
-        // TO DO
-        // see a list of gestures
-        // choose a gesture
-        // gestures can be compared - where will they be compared?
-
-        //rock crushes <i> if <i>=scissors OR lizard, but loses to everything else
-        //scissors cuts <i> if <i>=paper OR lizard, but loses to everything else
-        //paper covers/disproves <i> if <i>=paper OR Spock, but loses to everything else
-        //lizard poinson/eats <i> if <i>=Spock OR paper, but loses to everything else
-        //Spock smashes/vaporizes <i> if <i>=scissors OR rok, but loses to everything else
-
-        public virtual void PlayerChosenGesture()
+        public virtual void SelectGesture()
         {
 
         }
-
-
-
     }
 }

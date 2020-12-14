@@ -19,20 +19,12 @@ namespace RPSLS
 
         //member methods(CAN DO)
 
-        public void RandomComputerChoice()
+        public override void SelectGesture()
         {
             Random random = new Random();
             chosenGesture = gestures[random.Next(0, 4)];
-            Console.WriteLine("Computer throws " + chosenGesture);
-        }
-
-        //public int GenerateRandomNumber()
-        //{
-        //    int genRandom = rand.Next(1, 5);
-        //    //Console.WriteLine("random number = " +genRandom);
-        //    return genRandom;
-        //}
-      
+            Console.WriteLine("Computer selects " + chosenGesture);
+        }      
     }
 }
 

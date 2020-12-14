@@ -19,15 +19,21 @@ namespace RPSLS
             //test.VerifySecondPlayer();
             //Console.ReadLine();
 
-            Human test = new Human();
-            test.SelectGesture();
-            Console.ReadLine();
-
-            //Computer test = new Computer();
-            //test.ComputerChoice();
+            //Human test = new Human();
+            //test.SelectGesture();
             //Console.ReadLine();
 
+            //Computer test = new Computer();
+            //test.SelectGesture();
+            //Console.ReadLine();
 
+            //Game test = new Game();
+            //test.CompareGestures();
+            //Console.ReadLine();
+
+            Game test = new Game();
+            test.StartGame();
+            Console.ReadLine();
 
         }
     }
