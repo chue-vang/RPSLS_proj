@@ -25,7 +25,6 @@ namespace RPSLS
         {
             Console.WriteLine("Welcome to ROCK, PAPER, SCISSOR, LIZARD, SPOCK");
         }
-
         public void VerifySecondPlayer()
         {
             bool inputCheck = true;
@@ -53,11 +52,6 @@ namespace RPSLS
         }
         public void CompareGestures()
         {
-            // Call the SelectGesture method for both players (make sure both Human and Computer are complete)
-            // Finish CompareGestures logic
-            // run logic on which one wins - method tallies the score
-
-            //playerOne.SelectGesture();
             if (playerOne.chosenGesture == "ROCK" && playerTwo.chosenGesture == "ROCK" || playerOne.chosenGesture == "PAPER" && playerTwo.chosenGesture == "PAPER" || playerOne.chosenGesture == "SCISSOR" && playerTwo.chosenGesture == "SCISSOR" || playerOne.chosenGesture == "LIZARD" && playerTwo.chosenGesture == "LIZARD" || playerOne.chosenGesture == "SPOCK" && playerTwo.chosenGesture == "SPOCK")
             {
                 Console.WriteLine("It's a Tie!");
@@ -73,15 +67,36 @@ namespace RPSLS
                 playerTwoScore++;
             }
         }
-
         public void TrackScore()
         {
             Console.WriteLine("Player 1 has " + playerOneScore + " points");
             Console.WriteLine("Player 2 has " + playerTwoScore + " points");
         }
-
-
-
-
+        public void DisplayWinner()
+        {
+            {
+                if (playerOneScore == 3)
+                {
+                    Console.WriteLine("PLAYER 1 WINS THE GAME!!!!!");
+                }
+                else if (playerTwoScore == 3)
+                {
+                    Console.WriteLine("PLAYER 2 WINS THE GAME!!!!!");
+                }
+            }
+        }
+        public void StartGame()
+        {
+            Welcome();
+            VerifySecondPlayer();
+            while (playerOneScore < 3 && playerTwoScore < 3)
+            {
+                playerOne.SelectGesture();
+                playerTwo.SelectGesture();
+                CompareGestures();
+                TrackScore();
+            }
+            DisplayWinner();
+        }
     }
 }

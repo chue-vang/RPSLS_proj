@@ -18,12 +18,11 @@ namespace RPSLS
         }
 
         //member methods(CAN DO)
-
         public override void SelectGesture()
         {
             Random random = new Random();
             chosenGesture = gestures[random.Next(0, 4)];
-            Console.WriteLine("Computer selects " + chosenGesture);
+            Console.WriteLine("Player 2 selects " + chosenGesture);
         }      
     }
 }

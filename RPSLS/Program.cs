@@ -10,31 +10,9 @@ namespace RPSLS
     {
         static void Main(string[] args)
         {
-            //test console writeline
-            //Game game = new Game();
-            //game.Welcome();
-            //Console.ReadLine();
-
-            //Game test = new Game();
-            //test.VerifySecondPlayer();
-            //Console.ReadLine();
-
-            //Human test = new Human();
-            //test.SelectGesture();
-            //Console.ReadLine();
-
-            //Computer test = new Computer();
-            //test.SelectGesture();
-            //Console.ReadLine();
-
-            //Game test = new Game();
-            //test.CompareGestures();
-            //Console.ReadLine();
-
-            Game test = new Game();
-            test.StartGame();
+            Game game = new Game();
+            game.StartGame();
             Console.ReadLine();
-
         }
     }
 }

@@ -13,7 +13,6 @@ namespace RPSLS
         public int score;
         public string chosenGesture;
 
-
         //constructor
         public Player()
         {           

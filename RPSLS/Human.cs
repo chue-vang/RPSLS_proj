@@ -17,24 +17,12 @@ namespace RPSLS
 
         }
 
-        //public override void PlayerChosenGesture()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //member methods (CAN DO)
-
-        //what can a human player do??
-        //a human player can choose which gestures to use
-        //the human user will need to select their gesture from a list, will need to validate their input
-
-        public override void SelectGesture() // Selecting a gesture
+        public override void SelectGesture()
         {
-            // how do we set the PLayer's chosenGesture member variable equal to their selection
             bool inputCheck = true;
             while (inputCheck)
             {
-                Console.WriteLine("Player 1 select your gesture: 1=ROCK, 2=PAPER, 3=SCISSOR, 4=LIZARD, 5=SPOCK");
+                Console.WriteLine("Please select your gesture: 1=ROCK, 2=PAPER, 3=SCISSOR, 4=LIZARD, 5=SPOCK");
                 for (int i = 0; i < gestures.Count; i++)
                 {
                     Console.WriteLine((i + 1) + " " + gestures[i]);
@@ -43,27 +31,27 @@ namespace RPSLS
                 switch (selectGesture)
                 {
                     case "1":
-                        Console.WriteLine("Player 1 selects ROCK");
+                        Console.WriteLine("ROCK has been selected");
                         chosenGesture = gestures[0];
                         inputCheck = false;
                         break;
                     case "2":
-                        Console.WriteLine("Player 1 selects PAPER");
+                        Console.WriteLine("PAPER has been selected");
                         chosenGesture = gestures[1];
                         inputCheck = false;
                         break;
                     case "3":
-                        Console.WriteLine("Player 1 selects SCISSOR");
+                        Console.WriteLine("SCISSOR has been selected");
                         chosenGesture = gestures[2];
                         inputCheck = false;
                         break;
                     case "4":
-                        Console.WriteLine("Player 1 selects LIZARD");
+                        Console.WriteLine("LIZARD has been selected");
                         chosenGesture = gestures[3];
                         inputCheck = false;
                         break;
                     case "5":
-                        Console.WriteLine("Player 1 selects SPOCK");
+                        Console.WriteLine("SPOCK has been selected");
                         chosenGesture = gestures[4];
                         inputCheck = false;
                         break;
@@ -71,8 +59,7 @@ namespace RPSLS
                         Console.WriteLine("Invalid selection");
                         break;
                 }
-            }
-            
+            }           
         }
     }
 }
