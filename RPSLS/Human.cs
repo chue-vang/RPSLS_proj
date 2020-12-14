@@ -33,7 +33,7 @@ namespace RPSLS
             bool inputCheck = true;
             while (inputCheck)
             {
-                Console.WriteLine("Please select your gesture from the list: Rock=1, Paper=2, Scissor=3, Lizard=4, Spock=5");
+                Console.WriteLine("Please select your gesture from the list, by entering the correct number: ROCK=1, PAPER=2, SCISSOR=3, LIZARD=4, SPOCK=5");
                 for (int i = 0; i < gestures.Count; i++)
                 {
                     Console.WriteLine((i + 1) + " " + gestures[i]);
@@ -68,15 +68,11 @@ namespace RPSLS
                         break;
                     default:
                         Console.WriteLine("Invalid selection");
+                        SelectGesture();
                         break;
-                }            
-
+                }
             }
-
-            //int playerOneSelectedGesture = Int32.Parse(Console.ReadLine());
-
-            //make a switch case
+            
         }
-
     }
 }

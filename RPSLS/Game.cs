@@ -11,8 +11,8 @@ namespace RPSLS
         //member variables (HAS A)
         public Player playerOne;
         public Player playerTwo;
-        // two players (HAS A)
-        // one player can be human and a second player can be either human or computer
+        public int playerOnePoint;
+        public int playerTwoPoint;
 
         //constructor
         public Game()
@@ -21,14 +21,11 @@ namespace RPSLS
         }
 
         //member methods (CAN DO)
-
-        //the games needs 2 players, can either be human vs human, OR human vs computer
         //need a method to accept user's input if they are playing against a human or computer - this is where inheritance comes into play
         //if human vs human than ***something*** (maybe use console readline to accept user input?) else ---> ????
         //need a method to compare the gestures 
         //everytime a player's gesture wins a round, add the score to their running total
         //the first player to 2 wins, wins the game
-
 
         public void Welcome()
         {
@@ -40,7 +37,7 @@ namespace RPSLS
             bool inputCheck = true;
             while (inputCheck)
             {
-                Console.WriteLine("How Many Players Will be Playing?  Type '1' for ONE Player and '2' for TWO Players");
+                Console.WriteLine("How Many Players Will be Playing?  Type '1' for SINGLE Player or '2' for TWO Players");
                 string verifyPlayerQuantity = Console.ReadLine();
                 switch (verifyPlayerQuantity)
                 {
@@ -57,9 +54,15 @@ namespace RPSLS
                         break;
                     default:
                         Console.WriteLine("Invalid selection");
+                        VerifySecondPlayer();
                         break;
                 }
             }
+        }
+
+        public void CompareGestures()
+        {
+            
         }
     }
 }

@@ -19,13 +19,15 @@ namespace RPSLS
             //test.VerifySecondPlayer();
             //Console.ReadLine();
 
-            //Human test = new Human();
-            //test.SelectGesture();
+            Human test = new Human();
+            test.SelectGesture();
+            Console.ReadLine();
+
+            //Computer test = new Computer();
+            //test.ComputerChoice();
             //Console.ReadLine();
 
-            Computer test = new Computer();
-            test.GenerateRandomNumber();
-            Console.ReadLine();
+
 
         }
     }

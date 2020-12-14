@@ -17,7 +17,7 @@ namespace RPSLS
         //constructor
         public Player()
         {           
-            gestures = new List<string>() { "rock", "paper", "scissor", "lizard", "spock" };                 
+            gestures = new List<string>() { "ROCK", "PAPER", "SCISSOR", "LIZARD", "SPOCK" };                 
         }
 
         //member methods (CAN DO)
