@@ -24,7 +24,6 @@ namespace RPSLS
             Random random = new Random();
             chosenGesture = gestures[random.Next(0, 4)];
             Console.WriteLine("Computer throws " + chosenGesture);
-
         }
 
         //public int GenerateRandomNumber()

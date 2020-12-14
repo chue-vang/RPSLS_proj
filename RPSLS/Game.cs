@@ -54,7 +54,6 @@ namespace RPSLS
                         break;
                     default:
                         Console.WriteLine("Invalid selection");
-                        VerifySecondPlayer();
                         break;
                 }
             }
@@ -62,7 +61,22 @@ namespace RPSLS
 
         public void CompareGestures()
         {
-            
+            if (playerOne.chosenGesture == "ROCK" && playerTwo.chosenGesture == "ROCK" || playerOne.chosenGesture == "PAPER" && playerTwo.chosenGesture == "PAPER" || playerOne.chosenGesture == "SCISSOR" && playerTwo.chosenGesture == "SCISSOR" || playerOne.chosenGesture == "LIZARD" && playerTwo.chosenGesture == "LIZARD" || playerOne.chosenGesture == "SPOCK" && playerTwo.chosenGesture == "SPOCK")
+            {
+                Console.WriteLine("Tie");
+            }
+            else if (playerOne.chosenGesture =="ROCK" && playerTwo.chosenGesture == "SCISSOR" || playerOne.chosenGesture == "ROCK" && playerTwo.chosenGesture == "LIZARD" || playerOne.chosenGesture == "PAPER" && playerTwo.chosenGesture == "SPOCK" || playerOne.chosenGesture == "PAPER" && playerTwo.chosenGesture == "ROCK" ||playerOne.chosenGesture == "SCISSOR" && playerTwo.chosenGesture == "PAPER" && playerOne.chosenGesture == "SCISSOR" && playerTwo.chosenGesture == "LIZARD" || playerOne.chosenGesture == "LIZARD" && playerTwo.chosenGesture == "SPOCK" || playerOne.chosenGesture == "LIZARD" && playerTwo.chosenGesture == "PAPER" && playerOne.chosenGesture == "SPOCK" && playerTwo.chosenGesture == "SCISSOR" || playerOne.chosenGesture == "SPOCK" && playerTwo.chosenGesture == "ROCK")
+            {
+                Console.WriteLine("Player 1 won this round!");
+                playerOnePoint++;
+            }
+            else
+            {
+                Console.WriteLine("Player 2 won this round!");
+                playerTwoPoint++;
+            }
         }
+
+
     }
 }

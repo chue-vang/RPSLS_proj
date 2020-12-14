@@ -42,33 +42,27 @@ namespace RPSLS
                 switch (selectGesture)
                 {
                     case "1":
-                    case "one":
-                        chosenGesture = selectGesture;
+                        Console.WriteLine("Player 1 selects ROCK");
                         inputCheck = false;
                         break;
                     case "2":
-                    case "two":
-                        chosenGesture = selectGesture;
+                        Console.WriteLine("Player 1 selects PAPER");
                         inputCheck = false;
                         break;
                     case "3":
-                    case "three":
-                        chosenGesture = selectGesture;
+                        Console.WriteLine("Player 1 selects SCISSOR");
                         inputCheck = false;
                         break;
                     case "4":
-                    case "four":
-                        chosenGesture = selectGesture;
+                        Console.WriteLine("Player 1 selects LIZARD");
                         inputCheck = false;
                         break;
                     case "5":
-                    case "five":
-                        chosenGesture = selectGesture;
+                        Console.WriteLine("Player 1 selects SPOCK");
                         inputCheck = false;
                         break;
                     default:
                         Console.WriteLine("Invalid selection");
-                        SelectGesture();
                         break;
                 }
             }
