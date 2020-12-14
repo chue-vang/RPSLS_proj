@@ -15,10 +15,17 @@ namespace RPSLS
             //game.Welcome();
             //Console.ReadLine();
 
-            //Human test = new Human(0, 1);
-            //test.PlayerOneChosenGesture();
+            //Game test = new Game();
+            //test.VerifySecondPlayer();
             //Console.ReadLine();
 
+            //Human test = new Human();
+            //test.SelectGesture();
+            //Console.ReadLine();
+
+            //Computer test = new Computer();
+            //test.ComputerSelectGesture();
+            //Console.ReadLine();
 
         }
     }

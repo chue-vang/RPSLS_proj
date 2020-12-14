@@ -16,10 +16,8 @@ namespace RPSLS
 
         //constructor
         public Player()
-        {
-            gestures = new List<string>() { "rock", "paper", "scissor", "lizard", "spock" };
-            
-           
+        {           
+            gestures = new List<string>() { "rock", "paper", "scissor", "lizard", "spock" };                 
         }
 
         //member methods (CAN DO)
@@ -39,7 +37,10 @@ namespace RPSLS
         //lizard poinson/eats <i> if <i>=Spock OR paper, but loses to everything else
         //Spock smashes/vaporizes <i> if <i>=scissors OR rok, but loses to everything else
 
+        public virtual void PlayerChosenGesture()
+        {
 
+        }
 
 
 
