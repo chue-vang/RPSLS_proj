@@ -23,9 +23,9 @@ namespace RPSLS
             //test.SelectGesture();
             //Console.ReadLine();
 
-            //Computer test = new Computer();
-            //test.ComputerSelectGesture();
-            //Console.ReadLine();
+            Computer test = new Computer();
+            test.GenerateRandomNumber();
+            Console.ReadLine();
 
         }
     }

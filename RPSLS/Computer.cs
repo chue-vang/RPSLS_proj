@@ -9,19 +9,28 @@ namespace RPSLS
     class Computer : Player
     {
         //member variables(HAS A)
-
+        public Random rand;
 
 
         //constructor
         public Computer()
         {
-
+            rand = new Random();
+            
         }
 
         //member methods(CAN DO)
 
         //what can a computer player do??
         //it can use random gestures
+
+        //random number generator
+        public int GenerateRandomNumber()
+        {
+            int genRandom = rand.Next(1, 5);
+            Console.WriteLine("random number = " +genRandom);
+            return genRandom;
+        }
 
         public void ComputerSelectGesture()
         {
@@ -35,6 +44,7 @@ namespace RPSLS
             //method not complete
             //need to generate a random number from 1 - 5
         }
+
 
     }
 }

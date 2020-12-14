@@ -47,7 +47,7 @@ namespace RPSLS
                     case "1":
                     case "one":
                         playerOne = new Human();
-                        //playerTwo = new Computer();
+                        playerTwo = new Computer();
                         inputCheck = false;
                         break;
                     case "2":
@@ -61,8 +61,5 @@ namespace RPSLS
                 }
             }
         }
-
-
-
     }
 }
